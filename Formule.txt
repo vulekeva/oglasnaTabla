@@ -1,0 +1,33 @@
+ if (minutaodpocetka > 365 || minutaodpocetka < 0)
+                {
+                    return 0;
+                }
+                if (minutaodpocetka > ((trajanje*6)+ 45) && minutaodpocetka < (((trajanje * 6) + 45)+trajanje))
+                {
+                    return ((trajanje * 7) + 45) - minutaodpocetka;//7.cas
+                }
+                if (minutaodpocetka >= (trajanje*5)+40)   // 5-6
+                {
+                    return ((trajanje * 6) + 40) - minutaodpocetka;
+                }
+                if (minutaodpocetka >= (trajanje*4)+35) // 4-5
+                {
+                    return ((trajanje * 5) + 35) - minutaodpocetka;
+                }
+                if (minutaodpocetka >= (trajanje*3)+ 30) //3 - 4
+                {
+                    return ((trajanje * 4) + 30) - minutaodpocetka;
+                }
+                if (minutaodpocetka >= (trajanje*2) + 10)
+                {
+                    return ((trajanje * 3) + 10) - minutaodpocetka; //Prelazak izmedju drugog i treceg casa
+                }
+                if (minutaodpocetka >= trajanje+5)
+                {
+                    return ((trajanje*2)+5) - minutaodpocetka;
+                }
+                if (minutaodpocetka >= 0)
+                {
+                    return trajanje - minutaodpocetka;
+                }
+            }
