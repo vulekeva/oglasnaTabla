@@ -22,10 +22,12 @@ namespace OglasnaTabla
         public int pocM2;
 
         public bool redovan = true;
-
+        public bool obavesti = false;
         public int trajanje;
         public int trajanje1;
         public int trajanje2;
+
+        public string Obavestenje;
 
         public Fpodesavanje()
         {
@@ -69,8 +71,18 @@ namespace OglasnaTabla
                 textBox5.Show();
                 textBox6.Show();
             }
+            if (checkBox1.Checked == true)
+            {
+                textBox7.Show();
+                
+            }
+            else
+            {
+                textBox7.Hide();
+            }
 
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -89,6 +101,15 @@ namespace OglasnaTabla
                 pocH2 = int.Parse(textBox6.Text);
                 pocM2 = int.Parse(textBox5.Text);
                 trajanje2 = int.Parse(textBox4.Text);
+            }
+            if (checkBox1.Checked == true)
+            {
+                obavesti = true;
+                Obavestenje = textBox7.Text;
+            }
+            else
+            {
+                obavesti = false;
             }
 
         }
