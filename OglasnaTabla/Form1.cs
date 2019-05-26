@@ -127,7 +127,7 @@ namespace OglasnaTabla
         }
 
         //potprogram koji vraća koliko minuta je do sledećeg odmora, parametri su pocetak nastave (sat i minut), trenutno vreme (sat i minut) i trajanje svakog časa
-
+        
         public static int KolikoDoCasa(int pocNastaveH, int poceNastaveM, int vremeH, int vremeM, int trajanjeC, bool provera)
         {
            
@@ -341,22 +341,22 @@ namespace OglasnaTabla
                 if (kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) > 0)
                 {
                     label2.Left = (this.Size.Width - label2.Size.Width) / 2;
-                    label2.Text = "U toku je " + redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". ^as, molimo Vas za ti[inu. ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta";
+                    label2.Text = "U toku je " + redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". ^as, molimo Vas za ti[inu: \n ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta.";
                 }
                 else
                 {
                     label2.Left = (this.Size.Width - label2.Size.Width) / 2;
                     if ((KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan)==-1)&&(vremeH>8))
                     {
-                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoNastave(14, 0, vremeH, vremeM) + ". minuta! U@ivajte u odmoru!");
+                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoNastave(14, 0, vremeH, vremeM) + ". minuta! \n U@ivajte u odmoru!");
                     }
                     else if ((KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) == -1) && (vremeH <= 7)) //Obavezno testirati!!!
                     {
-                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoNastave(7, 45, vremeH, vremeM) + ". minuta! U@ivajte u odmoru!");
+                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoNastave(7, 45, vremeH, vremeM) + ". minuta! \n U@ivajte u odmoru!");
                     }
                     else
                     {
-                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta! U@ivajte u odmoru!");
+                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta! \n U@ivajte u odmoru!");
                     }
                 }
             }
@@ -379,22 +379,22 @@ namespace OglasnaTabla
                 }
                 if (kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) > 0)
                 {
-                    label2.Text = "U toku je " + (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan)) + ". ^as, molimo Vas za ti[inu. ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta";
+                    label2.Text = "U toku je " + (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan)) + ". ^as, molimo Vas za ti[inu. \n ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta.";
                     label2.Left = (this.Size.Width - label2.Size.Width) / 2;
                 }
                 else if (kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) < 0)
                 {
                         label2.Left = (this.Size.Width - label2.Size.Width) / 2;
-                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta! U@ivajte u odmoru!");
+                        label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta! \n U@ivajte u odmoru!");
                 }
                 if (KolikoDoCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) == -1)
                 {
                     label2.Left = (this.Size.Width - label2.Size.Width) / 2;
-                    label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoNastave(PocH, PocM, vremeH, vremeM) + ". minuta! U@ivajte u odmoru!");
+                    label2.Text = (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + 1) + ". ^as po^iwe za " + (KolikoDoNastave(PocH, PocM, vremeH, vremeM) + ". minuta! \n U@ivajte u odmoru!");
 
                 }
             }
-            label3.Text = vreme.Date.ToLongDateString();
+            label3.Text =vreme.Date.ToLongDateString() + "; " + DateTime.Now.ToLongTimeString() + ".";
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -433,9 +433,9 @@ namespace OglasnaTabla
 
             //ZADACI ZA SLEDECU SEKCIJU:
         }//NACI ODGOVARAJUCU FORMULU ZA POCETAK DRUGE SMENE U VANREDNOJ NASTAVI! Jedno od mogucih resenja:
-         //1.Napraviti potprogram koji ce se pozvati kada se zavrse casovi!!!!!! - Najbolja ideja!
-         //2. Napraviti labelu gde se upisuju vazna obavestenja
-         //3. I najvaznjije - PRODUZENI CASOVI!
+         //1.Napraviti potprogram koji ce se pozvati kada se zavrse casovi!!!!!! - Najbolja ideja! OK!
+         //2. Napraviti labelu gde se upisuju vazna obavestenja OK!
+         //3. I najvaznjije - PRODUZENI CASOVI! U PROGRESU!
          //Postoji neki BAG? Pokusati da nadjes resenje! BAG se aktivira tako sto unesemo da je pocetak nastave u 14:00 traje 17 minuta, sadasnje vreme je 14:17 - program nece reagovati dok se ne promeni vrednost u satu!
 
 

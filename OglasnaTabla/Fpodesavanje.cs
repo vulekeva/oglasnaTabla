@@ -23,9 +23,12 @@ namespace OglasnaTabla
 
         public bool redovan = true;
         public bool obavesti = false;
+        public bool Produzeno = false;
         public int trajanje;
         public int trajanje1;
         public int trajanje2;
+
+        public int VelikiOdmor;
 
         public string Obavestenje;
 
@@ -36,7 +39,7 @@ namespace OglasnaTabla
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            if (radioButton1.Checked == true) //Редовно
             {
                 label2.Hide();
                 label3.Hide();
@@ -46,6 +49,21 @@ namespace OglasnaTabla
                 label7.Hide();
                 label8.Hide();
                 label9.Hide();
+
+                label10.Hide();
+                label11.Hide();
+                label12.Hide();
+                label13.Hide();
+                
+
+                checkBox2.Hide();
+                checkBox3.Hide();
+                checkBox4.Hide();
+                checkBox5.Hide();
+                checkBox6.Hide();
+                checkBox7.Hide();
+                
+
                 textBox1.Hide();
                 textBox2.Hide();
                 textBox3.Hide();
@@ -53,6 +71,9 @@ namespace OglasnaTabla
                 textBox5.Hide();
                 textBox6.Hide();
 
+                textBox8.Hide();
+                textBox9.Hide();
+                
             }
             else
             {
@@ -91,13 +112,24 @@ namespace OglasnaTabla
                 redovan = true;
                 trajanje = 45;
             }
-            else
+            else if (radioButton2.Checked == true)
             {
                 redovan = false;
                 pocH1 = int.Parse(textBox1.Text);
                 pocM1 = int.Parse(textBox2.Text);
                 trajanje1 = int.Parse(textBox3.Text);
 
+                pocH2 = int.Parse(textBox6.Text);
+                pocM2 = int.Parse(textBox5.Text);
+                trajanje2 = int.Parse(textBox4.Text);
+            }
+            else
+            {
+                Produzeno = true;
+
+                pocH1 = int.Parse(textBox1.Text);
+                pocM1 = int.Parse(textBox2.Text);
+                trajanje1 = int.Parse(textBox3.Text);
                 pocH2 = int.Parse(textBox6.Text);
                 pocM2 = int.Parse(textBox5.Text);
                 trajanje2 = int.Parse(textBox4.Text);
