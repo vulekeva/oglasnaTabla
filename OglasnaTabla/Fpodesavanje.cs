@@ -35,7 +35,6 @@ namespace OglasnaTabla
         public Fpodesavanje()
         {
             InitializeComponent();
-           
             label10.Hide();
         }
 

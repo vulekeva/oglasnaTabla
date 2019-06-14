@@ -300,6 +300,7 @@ namespace OglasnaTabla
         public Form1()
         {
             InitializeComponent();
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             label1.BackColor = System.Drawing.Color.Transparent;
             label2.BackColor = System.Drawing.Color.Transparent;
             label3.BackColor = System.Drawing.Color.Transparent;
@@ -394,7 +395,8 @@ namespace OglasnaTabla
 
                 }
             }
-            label3.Text =vreme.Date.ToLongDateString() + "\n" + DateTime.Now.ToLongTimeString() + ".";
+            label3.Text =vreme.Date.ToLongDateString() +"  " + DateTime.Now.ToLongTimeString() + ".";
+            
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -433,11 +435,26 @@ namespace OglasnaTabla
 
             //ZADACI ZA SLEDECU SEKCIJU:
         }//NACI ODGOVARAJUCU FORMULU ZA POCETAK DRUGE SMENE U VANREDNOJ NASTAVI! Jedno od mogucih resenja:
-         //1.Napraviti potprogram koji ce se pozvati kada se zavrse casovi!!!!!! - Najbolja ideja! OK!
-         //2. Napraviti labelu gde se upisuju vazna obavestenja OK!
-         //3. I najvaznjije - PRODUZENI CASOVI! U PROGRESU!
-         //Postoji neki BAG? Pokusati da nadjes resenje! BAG se aktivira tako sto unesemo da je pocetak nastave u 14:00 traje 17 minuta, sadasnje vreme je 14:17 - program nece reagovati dok se ne promeni vrednost u satu!
 
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char) Keys.Escape)
+            {
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                ShowInTaskbar = true;
+            }
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                ShowInTaskbar = false;
+
+            }
+        }
+        //1.Napraviti potprogram koji ce se pozvati kada se zavrse casovi!!!!!! - Najbolja ideja! OK!
+        //2. Napraviti labelu gde se upisuju vazna obavestenja OK!
+        //3. I najvaznjije - PRODUZENI CASOVI! U PROGRESU!
+        //Postoji neki BAG? Pokusati da nadjes resenje! BAG se aktivira tako sto unesemo da je pocetak nastave u 14:00 traje 17 minuta, sadasnje vreme je 14:17 - program nece reagovati dok se ne promeni vrednost u satu!
+        //TaskBAR mozda treba sakriti??
 
     }
 }
