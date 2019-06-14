@@ -50,20 +50,6 @@ namespace OglasnaTabla
                 label8.Hide();
                 label9.Hide();
 
-                label10.Hide();
-                label11.Hide();
-                label12.Hide();
-                label13.Hide();
-                
-
-                checkBox2.Hide();
-                checkBox3.Hide();
-                checkBox4.Hide();
-                checkBox5.Hide();
-                checkBox6.Hide();
-                checkBox7.Hide();
-                
-
                 textBox1.Hide();
                 textBox2.Hide();
                 textBox3.Hide();
@@ -71,8 +57,7 @@ namespace OglasnaTabla
                 textBox5.Hide();
                 textBox6.Hide();
 
-                textBox8.Hide();
-                textBox9.Hide();
+               
                 
             }
             else

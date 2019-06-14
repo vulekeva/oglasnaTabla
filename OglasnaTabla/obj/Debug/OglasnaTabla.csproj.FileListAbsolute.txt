@@ -63,3 +63,14 @@ C:\Users\Administrator\Source\Repos\oglasnaTabla\OglasnaTabla\obj\Debug\OglasnaT
 C:\Users\Administrator\Source\Repos\oglasnaTabla\OglasnaTabla\obj\Debug\OglasnaTabla.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Source\Repos\oglasnaTabla\OglasnaTabla\obj\Debug\OglasnaTabla.exe
 C:\Users\Administrator\Source\Repos\oglasnaTabla\OglasnaTabla\obj\Debug\OglasnaTabla.pdb
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\bin\Debug\OglasnaTabla.exe.config
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\bin\Debug\OglasnaTabla.exe
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\bin\Debug\OglasnaTabla.pdb
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.csprojAssemblyReference.cache
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.Form1.resources
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.Fpodesavanje.resources
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.Properties.Resources.resources
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.csproj.GenerateResource.cache
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.exe
+C:\Users\Korisnik\Source\Repos\oglasnaTabla4\OglasnaTabla\obj\Debug\OglasnaTabla.pdb

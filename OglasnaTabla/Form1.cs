@@ -341,7 +341,7 @@ namespace OglasnaTabla
                 if (kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) > 0)
                 {
                     label2.Left = (this.Size.Width - label2.Size.Width) / 2;
-                    label2.Text = "U toku je " + redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". ^as, molimo Vas za ti[inu: \n ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta.";
+                    label2.Text = "U toku je " + redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". ^as, molimo Vas za ti[inu: \n ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta;";
                 }
                 else
                 {
@@ -379,7 +379,7 @@ namespace OglasnaTabla
                 }
                 if (kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) > 0)
                 {
-                    label2.Text = "U toku je " + (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan)) + ". ^as, molimo Vas za ti[inu. \n ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta.";
+                    label2.Text = "U toku je " + (redniBrCasa(PocH, PocM, vremeH, vremeM, trajanje, redovan)) + ". ^as, molimo Vas za ti[inu. \n ^as se zavr[ava za " + kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) + ". minuta;";
                     label2.Left = (this.Size.Width - label2.Size.Width) / 2;
                 }
                 else if (kolikoDoOdmora(PocH, PocM, vremeH, vremeM, trajanje, redovan) < 0)
@@ -394,7 +394,7 @@ namespace OglasnaTabla
 
                 }
             }
-            label3.Text =vreme.Date.ToLongDateString() + "; " + DateTime.Now.ToLongTimeString() + ".";
+            label3.Text =vreme.Date.ToLongDateString() + "\n" + DateTime.Now.ToLongTimeString() + ".";
         }
         private void Form1_Load(object sender, EventArgs e)
         {
