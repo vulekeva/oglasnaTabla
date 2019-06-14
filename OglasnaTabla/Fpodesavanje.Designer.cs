@@ -52,6 +52,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -206,7 +207,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(299, 304);
+            this.button1.Location = new System.Drawing.Point(293, 300);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 41);
             this.button1.TabIndex = 17;
@@ -254,12 +255,24 @@
     " ]irilicu! ";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.YellowGreen;
+            this.label11.Font = new System.Drawing.Font("Microsoft New Tai Lue", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(187, 344);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(283, 15);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "© Михаило Пејић и програмерска секција, 2019";
+            // 
             // Fpodesavanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(729, 356);
+            this.ClientSize = new System.Drawing.Size(729, 367);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.checkBox1);
@@ -313,5 +326,6 @@
         public System.Windows.Forms.CheckBox checkBox1;
         public System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
