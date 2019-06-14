@@ -35,10 +35,13 @@ namespace OglasnaTabla
         public Fpodesavanje()
         {
             InitializeComponent();
+           
+            label10.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+         
             if (radioButton1.Checked == true) //Редовно
             {
                 label2.Hide();
@@ -128,6 +131,21 @@ namespace OglasnaTabla
             {
                 obavesti = false;
             }
+
+        }
+
+        private void textBox7_MouseHover(object sender, EventArgs e)
+        {
+            label10.Show();
+        }
+
+        private void textBox7_MouseLeave(object sender, EventArgs e)
+        {
+            label10.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
 
         }
     }

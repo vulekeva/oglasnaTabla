@@ -51,6 +51,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -230,11 +231,28 @@
             // 
             // textBox7
             // 
+            this.textBox7.Font = new System.Drawing.Font("Beograd", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(227, 146);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(203, 114);
             this.textBox7.TabIndex = 19;
+            this.textBox7.MouseLeave += new System.EventHandler(this.textBox7_MouseLeave);
+            this.textBox7.MouseHover += new System.EventHandler(this.textBox7_MouseHover);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Yellow;
+            this.label10.Font = new System.Drawing.Font("Beograd", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(151, 263);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(329, 24);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "        Molimo pi[ite engleskom latinicom!\r\nSistem ]e automatski da ga pretvori u" +
+    " ]irilicu! ";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // Fpodesavanje
             // 
@@ -242,6 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(729, 356);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
@@ -293,5 +312,6 @@
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.CheckBox checkBox1;
         public System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label10;
     }
 }
